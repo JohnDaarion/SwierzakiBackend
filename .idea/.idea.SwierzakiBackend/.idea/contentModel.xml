@@ -4,14 +4,11 @@
     <e p="C:\Github\Swiezaki\Backend\SwierzakiBackend" t="IncludeRecursive">
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="ConfigurationHandler.cs" t="Include" />
       <e p="Controllers" t="Include">
         <e p="HelloWorldController.cs" t="Include" />
       </e>
       <e p="DatabaseConnectionProvider.csproj" t="IncludeRecursive" />
-      <e p="INoteRepository.cs" t="Include" />
-      <e p="Note.cs" t="Include" />
-      <e p="NoteContext.cs" t="Include" />
-      <e p="NoteRepository.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp2.0" t="Include">

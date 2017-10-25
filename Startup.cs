@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,28 +7,20 @@ namespace DatabaseConnectionProvider
 {
     public class Startup
     {
+        private readonly IConfiguration _configuration;
+        private readonly ConfigurationHandler _configurationHandler;
+
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
-            Console.Write("pucka: ");
-            Console.Write(Configuration.GetSection("MongoConnection:ConnectionString").Value);
-            Console.Write(" .end of pucka");
+            _configuration = configuration;
+            
+            _configurationHandler = new ConfigurationHandler(_configuration);
         }
-
-        public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            
-            services.Configure<Settings>(options =>
-            {
-                options.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
-                options.Database = Configuration.GetSection("MongoConnection:Database").Value;
-            });
-            
-          
-            services.AddTransient<INoteRepository, NoteRepository>();
+            _configurationHandler.ConfigureDataBaseSettings(services);      
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
