@@ -17,7 +17,7 @@ namespace DatabaseConnectionProvider
 
         public void ConfigureDataBaseSettings(IServiceCollection services)
         {
-            services.Configure<Settings>(options => {
+            services.Configure<MongoDbSettings>(options => {
                 options.ConnectionString = _configuration.GetSection(MongoConnectionStringKey).Value;
                 options.Database = _configuration.GetSection(MongoDatabaseKey).Value;
             });
