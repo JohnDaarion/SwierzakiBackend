@@ -23,5 +23,9 @@
       },
       "applicationUrl": "http://localhost:57672/"
     }
+  },
+  "MongoConnection": {
+    "ConnectionString": "mongodb://localhost",
+    "Database": "swiezakidb"
   }
 }

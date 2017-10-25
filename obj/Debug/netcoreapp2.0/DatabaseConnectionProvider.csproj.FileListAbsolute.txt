@@ -8,3 +8,13 @@ c:\users\jan\Source\repos\DatabaseConnectionProvider\DatabaseConnectionProvider\
 c:\users\jan\Source\repos\DatabaseConnectionProvider\DatabaseConnectionProvider\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.AssemblyInfo.cs
 c:\users\jan\Source\repos\DatabaseConnectionProvider\DatabaseConnectionProvider\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.dll
 c:\users\jan\Source\repos\DatabaseConnectionProvider\DatabaseConnectionProvider\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.pdb
+C:\Github\Swiezaki\Backend\SwierzakiBackend\bin\Debug\netcoreapp2.0\DatabaseConnectionProvider.deps.json
+C:\Github\Swiezaki\Backend\SwierzakiBackend\bin\Debug\netcoreapp2.0\DatabaseConnectionProvider.runtimeconfig.json
+C:\Github\Swiezaki\Backend\SwierzakiBackend\bin\Debug\netcoreapp2.0\DatabaseConnectionProvider.runtimeconfig.dev.json
+C:\Github\Swiezaki\Backend\SwierzakiBackend\bin\Debug\netcoreapp2.0\DatabaseConnectionProvider.dll
+C:\Github\Swiezaki\Backend\SwierzakiBackend\bin\Debug\netcoreapp2.0\DatabaseConnectionProvider.pdb
+C:\Github\Swiezaki\Backend\SwierzakiBackend\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.csproj.CoreCompileInputs.cache
+C:\Github\Swiezaki\Backend\SwierzakiBackend\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.AssemblyInfoInputs.cache
+C:\Github\Swiezaki\Backend\SwierzakiBackend\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.AssemblyInfo.cs
+C:\Github\Swiezaki\Backend\SwierzakiBackend\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.dll
+C:\Github\Swiezaki\Backend\SwierzakiBackend\obj\Debug\netcoreapp2.0\DatabaseConnectionProvider.pdb
