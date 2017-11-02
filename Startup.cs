@@ -7,16 +7,20 @@ namespace DatabaseConnectionProvider
 {
     public class Startup
     {
+        private readonly IConfiguration _configuration;
+        private readonly ConfigurationHandler _configurationHandler;
+
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
+            
+            _configurationHandler = new ConfigurationHandler(_configuration);
         }
-
-        public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            _configurationHandler.ConfigureDataBaseSettings(services);      
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
